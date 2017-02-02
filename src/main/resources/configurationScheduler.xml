@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="job1" class="com.napps.common.job.Job1" />
+	<bean id="job2" class="com.napps.common.job.Job2" />
+	<bean id="job3" class="com.napps.common.job.Job3" />
+	<bean id="job4" class="com.napps.common.job.Job4" />
+	<bean id="job5" class="com.napps.common.job.Job5" />
+	<bean id="job6" class="com.napps.common.job.Job6" />
+	<bean id="job7" class="com.napps.common.job.Job7" />
+	<bean id="job8" class="com.napps.common.job.Job8" />
+	<bean id="job9" class="com.napps.common.job.Job9" />
+	<bean id="job10" class="com.napps.common.job.Job10" />
+
+
+
+	<!-- Quartz job -->
+	<bean name="Job1" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job1" />
+	</bean>
+
+	<bean name="Job2" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job2" />
+	</bean>
+
+	<bean name="Job3" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job3" />
+	</bean>
+
+	<bean name="Job4" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job4" />
+	</bean>
+
+	<bean name="Job5" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job5" />
+	</bean>
+
+	<bean name="Job6" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job6" />
+	</bean>
+
+	<bean name="Job7" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job7" />
+	</bean>
+
+	<bean name="Job8" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job8" />
+	</bean>
+
+	<bean name="Job9" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job9" />
+	</bean>
+	<bean name="Job10" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.napps.common.job.Job10" />
+	</bean>
+
+	<!-- Cron Scheduler Every Day (ED) -->
+
+	<bean id="cronTriggerJob1ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job1" />
+		<property name="cronExpression" value="11 16 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob2ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job2" />
+		<property name="cronExpression" value="11 16 12 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob3ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job3" />
+		<property name="cronExpression" value="0 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob4ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job4" />
+		<property name="cronExpression" value="10 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob5ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job5" />
+		<property name="cronExpression" value="0 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob6ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job6" />
+		<property name="cronExpression" value="10 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob7ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job7" />
+		<property name="cronExpression" value="0 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob8ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job8" />
+		<property name="cronExpression" value="10 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob9ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job9" />
+		<property name="cronExpression" value="0 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+	<bean id="cronTriggerJob10ED" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job10" />
+		<property name="cronExpression" value="10 45 09 * * ?" /> <!-- ss mm hh dd mm yy -->
+	</bean>
+
+
+
+	<!-- Cron Scheduller Week Days (WD) -->
+
+	<bean id="cronTriggerJob1WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job1" />
+		<property name="cronExpression" value="11 25 12 ? * MON-FRI" />
+	</bean>
+
+	<bean id="cronTriggerJob2WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job2" />
+		<property name="cronExpression" value="12 25 12 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob3WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job3" />
+		<property name="cronExpression" value="15 43 09 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob4WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job4" />
+		<property name="cronExpression" value="20 52 11 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob5WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job5" />
+		<property name="cronExpression" value="15 35 00 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob6WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job6" />
+		<property name="cronExpression" value="20 52 11 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob7WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job7" />
+		<property name="cronExpression" value="15 35 00 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob8WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job8" />
+		<property name="cronExpression" value="20 52 11 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob9WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job9" />
+		<property name="cronExpression" value="15 35 00 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob10WD" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job10" />
+		<property name="cronExpression" value="20 52 11 ? * MON-FRI" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+
+
+	<!-- Cron Scheduler Week End (WE) -->
+
+	<bean id="cronTriggerJob1WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job1" />
+		<property name="cronExpression" value="0 21 00 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob2WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job2" />
+		<property name="cronExpression" value="20 21 00 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob3WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job3" />
+		<property name="cronExpression" value="0 22 00 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob4WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job4" />
+		<property name="cronExpression" value="20 53 09 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob5WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job5" />
+		<property name="cronExpression" value="0 53 09 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob6WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job6" />
+		<property name="cronExpression" value="20 53 09 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob7WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job7" />
+		<property name="cronExpression" value="0 53 09 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob8WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job8" />
+		<property name="cronExpression" value="20 53 09 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob9WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job9" />
+		<property name="cronExpression" value="0 53 09 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	<bean id="cronTriggerJob10WE" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="Job10" />
+		<property name="cronExpression" value="20 53 09 ? * SAT-SUN" /> <!-- ss mm hh mm yy dd -->
+	</bean>
+
+	
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="cronTriggerJob1WD" />
+				<ref bean="cronTriggerJob2WD" />
+				<ref bean="cronTriggerJob3WD" />
+				<ref bean="cronTriggerJob4WD" />
+				<ref bean="cronTriggerJob5WD" />
+				<ref bean="cronTriggerJob6WD" />
+				<ref bean="cronTriggerJob7WD" />
+				<ref bean="cronTriggerJob8WD" />
+				<ref bean="cronTriggerJob9WD" />
+				<ref bean="cronTriggerJob10WD" />
+				
+			</list>
+		</property>
+	</bean>
+</beans>

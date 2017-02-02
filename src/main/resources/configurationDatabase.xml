@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+
+	<!-- Configuration Database -->
+		<!-- 0 -->
+	<connection>
+		<databasename>holliday</databasename>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<jdbc>jdbc:mysql://</jdbc>
+		<host>127.0.0.1:</host>
+		<port>3306/</port>
+		<username>root</username>
+		<password></password>
+		<instance></instance>
+	</connection>
+		<!-- 1 -->
+	<connection>
+		<databasename>Nayaga</databasename>
+		<driver>net.sourceforge.jtds.jdbc.Driver</driver>
+		<jdbc>jdbc:jtds:sqlserver://</jdbc>
+		<host>127.0.0.1:</host>
+		<port>1433/</port>
+		<username>sa</username>
+		<password>Cakra123$</password>
+		<instance></instance>
+	</connection>
+		<!-- 2 -->
+	<connection>
+		<databasename>NewBizZR</databasename>
+		<driver>org.postgresql.Driver</driver>
+		<jdbc>jdbc:postgresql://</jdbc>
+		<host>127.0.0.1:</host>
+		<port>5433/</port>
+		<username>sa</username>
+		<password>Cakra123$</password>
+		<instance></instance>
+	</connection>
+	
+	<!-- query for object database -->
+	<querysql>
+		<select>SELECT hdate FROM holly WHERE hdate = ? </select>
+	</querysql>
+	
+	<!-- list connection Database -->
+	<listConnection>
+		<listIdConnection>0</listIdConnection>
+	</listConnection>
+
+</database>

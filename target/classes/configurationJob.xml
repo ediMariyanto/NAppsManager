@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+	<!-- Example Configuration file.bat = cmd /c start path (ex: d:/../..bat) -->
+	<!-- Example Configuration file.exe = path (ex: c:/programfile/../..exe) -->
+	
+<runningJob>
+	<!-- Configuration Path Job-->
+	<path>
+		<pathJob1>cmd /c start D:/Date.bat</pathJob1>
+		<pathJob2>C:/Program Files/Adobe/Adobe Photoshop CS6 (64 Bit)/Photoshop.exe</pathJob2>
+		<pathJob3></pathJob3>
+		<pathJob4></pathJob4>
+		<pathJob5></pathJob5>
+		<pathJob6></pathJob6>
+		<pathJob7></pathJob7>
+		<pathJob8></pathJob8>
+		<pathJob9></pathJob9>
+		<pathJob10></pathJob10>
+	</path>
+</runningJob>
