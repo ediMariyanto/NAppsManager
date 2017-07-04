@@ -24,7 +24,7 @@ public class UIApp extends JFrame
 
 	public UIApp()
 	{
-		super("NAppsManager Aplication");
+		super("NAppsManager Application");
 
 		buttonStart.setEnabled(true);
 		buttonStop.setEnabled(false);
@@ -84,7 +84,7 @@ public class UIApp extends JFrame
 			}
 
 		});
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		setSize(800, 350);
 		setLocationRelativeTo(null);
 		setResizable(false);

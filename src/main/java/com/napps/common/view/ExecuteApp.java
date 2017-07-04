@@ -51,11 +51,9 @@ public class ExecuteApp
 			if (job1.equals(""))
 			{
 				log.warn("Job1 empty !");
-				System.out.println("Job1 empty !");
 			} else
 			{
 				log.info("Job 1 Running ..... -> " + job1);
-				System.out.println("Job 1 Running ..... -> " + job1);
 			}
 			if (job2.equals(""))
 			{
@@ -159,7 +157,7 @@ public class ExecuteApp
 		} catch (Exception e)
 		{
 			e.printStackTrace();
-			log.error("Aplication Error " + e);
+			log.error("Validation Aplication Error " + e);
 		}
 
 	}

@@ -33,10 +33,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</dependency>
 
 		<!-- Quartz framework -->
+		
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>
 			<artifactId>quartz</artifactId>
-			<version>2.2.3</version>
+			<version>2.2.1</version>
 		</dependency>
 
 		<dependency>
@@ -54,7 +55,13 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.21</version>
+			<version>1.7.22</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.7</version>
 		</dependency>
 
 		<!-- Database -->
@@ -76,7 +83,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<version>1.4</version>
 		</dependency>
 
-		
+
 
 	</dependencies>
 	<build>

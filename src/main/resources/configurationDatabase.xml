@@ -18,7 +18,7 @@
 		<databasename>Nayaga</databasename>
 		<driver>net.sourceforge.jtds.jdbc.Driver</driver>
 		<jdbc>jdbc:jtds:sqlserver://</jdbc>
-		<host>127.0.0.1:</host>
+		<host>192.168.1.62:</host>
 		<port>1433/</port>
 		<username>sa</username>
 		<password>Cakra123$</password>
@@ -38,12 +38,12 @@
 	
 	<!-- query for object database -->
 	<querysql>
-		<select>SELECT hdate FROM holly WHERE hdate = ? </select>
+		<select>SELECT HOLDATE FROM main.B_HOLIDAY WHERE HOLDATE = ? </select>
 	</querysql>
 	
 	<!-- list connection Database -->
 	<listConnection>
-		<listIdConnection>0</listIdConnection>
+		<listIdConnection>1</listIdConnection>
 	</listConnection>
 
 </database>
