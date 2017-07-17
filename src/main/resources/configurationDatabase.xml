@@ -18,10 +18,10 @@
 		<databasename>Nayaga</databasename>
 		<driver>net.sourceforge.jtds.jdbc.Driver</driver>
 		<jdbc>jdbc:jtds:sqlserver://</jdbc>
-		<host>192.168.1.62:</host>
+		<host>127.0.0.1:</host>
 		<port>1433/</port>
-		<username>sa</username>
-		<password>Cakra123$</password>
+		<username></username>
+		<password></password>
 		<instance></instance>
 	</connection>
 		<!-- 2 -->
